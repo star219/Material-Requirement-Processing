@@ -17,3 +17,5 @@ If you want to run it yourself, you need
 - PHP 5.0+ or newer
 - HTTP server with PHP support (eg: Apache, Nginx, Caddy)
 - Oracle18c
+
+License: MIT
