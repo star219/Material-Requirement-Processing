@@ -178,6 +178,6 @@ while ($row = oci_fetch_array($datereq, OCI_ASSOC+OCI_RETURN_NULLS)){
  </br></br></br></br></br>
 </body>
 <div class="card-footer text-muted" style="position: fixed; left: 0; bottom: -14; width: 100%; background-color: #f4f4f4; text-align: center;">
-     <p><small>❮ Built with 💙 by Aziz and Gautam ❯</small></p>
+     <p><small>❮ Built with 💙 by AzizStark ❯</small></p>
 </div>
 </html>
