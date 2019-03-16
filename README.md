@@ -3,8 +3,7 @@
 
 <h1>Material Requirement Processing - Oracle &amp; PHP (DBMS Project)</h1>
 
-I made this project for DBMS laboratory
-
+Material Requirement processing system based on cloths manufacturing.
 
 <pre>Language:PHP(Php Hypertext Preprocessor)</br>
 Frontend framework: Bootstrap</br>
