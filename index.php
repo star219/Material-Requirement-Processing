@@ -93,7 +93,7 @@ oci_execute($datereq4);
 $yar="Yarn";   
 $fab="Fabric";   
 $dye="Dye";   
-$deco="Decoratives";   
+$deco="Decorative";   
 
 $vals = oci_parse($conn, 'SELECT rate FROM bom WHERE name = :yar');
 oci_bind_by_name($vals, ':yar', $yar);
