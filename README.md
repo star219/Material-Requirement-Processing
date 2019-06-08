@@ -17,5 +17,10 @@ If you want to run it yourself, you need
 - PHP 5.0+ or newer
 - HTTP server with PHP support (eg: Apache, Nginx, Caddy)
 - Oracle18c
+- DBeaver 
+- InstantClient 18C 32bit
+
+Note: Run the queries provided in the 'Tables.sql' file.
+
 
 License: MIT
