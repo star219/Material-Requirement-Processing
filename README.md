@@ -1,9 +1,9 @@
 #Material-Requirement-Processing
 
 
-<h1>Material Requirement Processing - Oracle &amp; PHP (DBMS Project)</h1>
+<h1>Material Requirement Processing - Oracle &amp; PHP</h1>
 
-Material Requirement processing system based on cloths manufacturing.
+Material Requirement processing system for calculating the total materials required for manufacturing cloths and total cost involved across different due dates.
 
 <h4>Language:PHP(Php Hypertext Preprocessor)</br>
 Frontend framework: Bootstrap</br>
