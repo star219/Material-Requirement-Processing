@@ -5,7 +5,7 @@
 
 Material Requirement processing system for calculating the total materials required for manufacturing cloths and total cost involved across different due dates.
 
-<h4>Language:PHP(Php Hypertext Preprocessor)</br>
+<h4>Language: PHP</br>
 Frontend framework: Bootstrap</br>
 Plugins: JQuery</br>
 Database system: Oracle</br>
