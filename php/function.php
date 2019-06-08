@@ -2,7 +2,7 @@
 
     $db = "(DESCRIPTION=(ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521)))(CONNECT_DATA=(SID=orcl)))" ;
 
-    $conn = oci_connect('SYSTEM', 'Oracle@7', $db);
+    $conn = oci_connect('SYSTEM', '148635Stark', $db);
     if (!$conn) {
         $e = oci_error();
         trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
@@ -31,7 +31,7 @@
 
     #################################### INSERTION INTO THE DEMAND TABLE  #####################################
  
-    $insrt2 = oci_parse($conn, 'INSERT INTO demand (DEDATE, YARNDMD, FABRICDMND, DYEDMD, DECORATIVESDMD,PRODUCTNO) VALUES (TO_DATE(:dedate,:dfrmt), ((SELECT produtreq FROM prodemand WHERE dedate = TO_DATE(:dedate,:dfrmt) AND PRODUCTNO  = :pnum)*(SELECT YARNQTY FROM MRP WHERE PRODUCTNO = :pnum)), ((SELECT produtreq FROM prodemand WHERE dedate = TO_DATE(:dedate,:dfrmt) AND PRODUCTNO  = :pnum)*(SELECT FABRICQTY FROM MRP WHERE PRODUCTNO = :pnum)), ((SELECT produtreq FROM prodemand WHERE dedate = TO_DATE(:dedate,:dfrmt) AND PRODUCTNO  = :pnum)*(SELECT DYEQTY FROM MRP WHERE PRODUCTNO = :pnum)),((SELECT produtreq FROM prodemand WHERE dedate = TO_DATE(:dedate,:dfrmt) AND PRODUCTNO  = :pnum)*(SELECT DECORQTY FROM MRP WHERE PRODUCTNO = :pnum)),:pnum)');
+    $insrt2 = oci_parse($conn, 'INSERT INTO demand (DEDATE, YARNDMD, FABRICDMND, DYEDMD, DECORATIVESDMD,PRODUCTNO) VALUES (TO_DATE(:dedate,:dfrmt), ((SELECT produtreq FROM prodemand WHERE dedate = TO_DATE(:dedate,:dfrmt) AND PRODUCTNO  = :pnum)*(SELECT YARNQTY FROM MRP WHERE PRODUCTNO = :pnum)), ((SELECT produtreq FROM prodemand WHERE dedate = TO_DATE(:dedate,:dfrmt) AND PRODUCTNO  = :pnum)*(SELECT FABRICQTY FROM MRP WHERE PRODUCTNO = :pnum)), ((SELECT produtreq FROM prodemand WHERE dedate = TO_DATE(:dedate,:dfrmt) AND PRODUCTNO  = :pnum)*(SELECT DYEQTY FROM MRP WHERE PRODUCTNO = :pnum)),((SELECT produtreq FROM prodemand WHERE dedate = TO_DATE(:dedate,:dfrmt) AND PRODUCTNO  = :pnum)*(SELECT DECORATIVESQTY FROM MRP WHERE PRODUCTNO = :pnum)),:pnum)');
     oci_bind_by_name($insrt2, ':dedate', $dedate);
     oci_bind_by_name($insrt2, ':dfrmt', $dfrmt);
     oci_bind_by_name($insrt2, ':pnum', $pnum);

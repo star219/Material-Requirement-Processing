@@ -4,7 +4,7 @@
 
         $db = "(DESCRIPTION=(ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521)))(CONNECT_DATA=(SID=orcl)))" ;
 
-        $conn = oci_connect('SYSTEM', 'Oracle@7', $db);
+        $conn = oci_connect('SYSTEM', '148635Stark', $db);
         if (!$conn) {
             $e = oci_error();
             trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
