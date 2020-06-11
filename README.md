@@ -22,7 +22,7 @@ If you want to run it yourself, you need
 
 Note: Run the queries provided in the 'Tables.sql' file.
 
-Preview:
+<h4> Preview: </h4>
 
 <img src="https://res.cloudinary.com/azizcloud/image/upload/v1591881167/vvex1n5zg4eh8necdly2.png" />
 <img src="https://res.cloudinary.com/azizcloud/image/upload/v1591881167/mjczbj1wbm8irfnwlie4.png" />
